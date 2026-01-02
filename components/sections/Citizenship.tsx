@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import Section from "../Section";
+import Image from "next/image";
 
 const features = [
   {
@@ -34,8 +34,28 @@ export default function Citizenship() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <Section id="citizenship" background="gray">
-      <div ref={ref}>
+    <section id="citizenship" className="relative py-20 md:py-28 lg:py-32 px-6 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/passport.png"
+          alt=""
+          fill
+          className="object-cover opacity-80"
+          sizes="100vw"
+        />
+        {/* Light overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-kazan/40" />
+      </div>
+
+      {/* Content */}
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 32 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 32 }}
+        transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+        className="relative z-10 max-w-6xl mx-auto"
+      >
         <div className="text-center mb-16">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -126,7 +146,7 @@ export default function Citizenship() {
             ))}
           </div>
         </motion.div>
-      </div>
-    </Section>
+      </motion.div>
+    </section>
   );
 }
