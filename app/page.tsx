@@ -17,11 +17,11 @@ export default function Home() {
       <About />
       <Citizenship />
       <Manifesto />
+      <Stack />
       <EconomicProof />
       <Expats />
       <Land />
       <Neighborhoods />
-      <Stack />
 
       {/* CTA Section */}
       <section id="apply" className="bg-rausch py-20 md:py-28 px-6">
@@ -33,7 +33,9 @@ export default function Home() {
             Become a citizen of the global network society. Your home can be everywhere.
           </p>
           <a
-            href="#"
+            href="https://tally.so/r/EkdQaX"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-10 py-4 bg-white hover:bg-kazan text-rausch font-body font-semibold rounded-lg transition-colors duration-200"
           >
             Apply Now

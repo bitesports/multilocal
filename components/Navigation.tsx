@@ -9,6 +9,7 @@ const navItems = [
   { id: "manifesto", label: "Manifesto" },
   { id: "stack", label: "Stack" },
   { id: "expats", label: "Community" },
+  { id: "land", label: "Land" },
   { id: "neighborhoods", label: "Neighborhoods" },
 ];
 
