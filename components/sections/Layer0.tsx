@@ -54,7 +54,7 @@ export default function Layer0() {
             transition={{ duration: 0.5, delay: 0.05 }}
             className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
-            Kintsugi — CivicStack OS
+            Kintsugi — <a href="https://civicstack.xyz" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 transition-colors">CivicStack OS</a>
           </motion.h2>
 
           <motion.p
