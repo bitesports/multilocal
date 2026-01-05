@@ -306,7 +306,7 @@ export default function Network() {
           className="text-center"
         >
           <p className="font-body text-sm font-medium tracking-wide uppercase text-foggy mb-8">
-            Founding Network Partners
+            Potential Partners
           </p>
 
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
