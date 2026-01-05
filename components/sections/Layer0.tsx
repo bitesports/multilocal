@@ -52,7 +52,7 @@ export default function Layer0() {
             initial={{ opacity: 0, y: 16 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
             transition={{ duration: 0.5, delay: 0.05 }}
-            className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4"
+            className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
             Kintsugi
           </motion.h2>
@@ -75,7 +75,7 @@ export default function Layer0() {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="bg-black/50 backdrop-blur-sm border border-amber-400/30 rounded-2xl p-8 text-center mb-12 max-w-xl mx-auto"
         >
-          <h3 className="font-heading text-xl md:text-2xl font-semibold text-amber-400 mb-2">
+          <h3 className="font-heading text-xl md:text-2xl font-bold text-white mb-2">
             The Jurisdiction Routing Layer
           </h3>
           <div className="w-16 h-1 bg-amber-400 mx-auto rounded-full mb-4" />
@@ -99,7 +99,7 @@ export default function Layer0() {
                   {String(index + 1).padStart(2, '0')}
                 </span>
               </div>
-              <h4 className="font-heading font-semibold text-white mb-2">
+              <h4 className="font-heading font-bold text-white mb-2">
                 {feature.title}
               </h4>
               <p className="font-body text-white/60 text-sm">{feature.desc}</p>
