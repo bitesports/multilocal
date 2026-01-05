@@ -54,7 +54,7 @@ export default function Layer0() {
             transition={{ duration: 0.5, delay: 0.05 }}
             className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
           >
-            Kintsugi
+            Kintsugi — CivicStack OS
           </motion.h2>
 
           <motion.p
