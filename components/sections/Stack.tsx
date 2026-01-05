@@ -162,8 +162,7 @@ export default function Stack() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="font-body text-lg text-foggy max-w-2xl mx-auto"
           >
-            Adopt modules independently or deploy as a complete system. 
-            Each component is battle-tested and ready for production.
+            Adopt modules independently or deploy as a complete system.
           </motion.p>
         </div>
 

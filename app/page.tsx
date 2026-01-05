@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import Network from "@/components/sections/Network";
 import About from "@/components/sections/About";
 import Citizenship from "@/components/sections/Citizenship";
 import Manifesto from "@/components/sections/Manifesto";
@@ -8,12 +9,17 @@ import Expats from "@/components/sections/Expats";
 import Land from "@/components/sections/Land";
 import Neighborhoods from "@/components/sections/Neighborhoods";
 import Stack from "@/components/sections/Stack";
+import Layer0 from "@/components/sections/Layer0";
+import Partners from "@/components/sections/Partners";
+import Team from "@/components/sections/Team";
+import Investment from "@/components/sections/Investment";
 
 export default function Home() {
   return (
     <main className="relative">
       <Navigation />
       <Hero />
+      <Network />
       <About />
       <Citizenship />
       <Manifesto />
@@ -22,6 +28,10 @@ export default function Home() {
       <Expats />
       <Land />
       <Neighborhoods />
+      <Layer0 />
+      <Partners />
+      <Team />
+      <Investment />
 
       {/* CTA Section */}
       <section id="apply" className="bg-rausch py-20 md:py-28 px-6">

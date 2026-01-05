@@ -9,17 +9,14 @@ const features = [
   {
     title: "Opt-in",
     description: "Citizenship is voluntary, not determined by birth or passport.",
-    highlight: false,
   },
   {
     title: "Verifiable",
     description: "Prove identity, participation, and contribution with cryptographic credentials.",
-    highlight: true,
   },
   {
     title: "Privacy-preserving",
     description: "Zero-knowledge proofs protect your personal information.",
-    highlight: false,
   },
 ];
 
@@ -93,20 +90,12 @@ export default function Citizenship() {
               initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
               transition={{ duration: 0.5, delay: 0.15 + index * 0.05 }}
-              className={`rounded-2xl p-8 ${
-                feature.highlight
-                  ? "bg-rausch text-white"
-                  : "bg-white card-shadow-sm card-shadow-hover"
-              }`}
+              className="rounded-2xl p-8 bg-rausch/50 backdrop-blur-sm"
             >
-              <h3 className={`font-heading text-xl font-semibold mb-3 ${
-                feature.highlight ? "text-white" : "text-hof"
-              }`}>
+              <h3 className="font-heading text-xl font-semibold mb-3 text-white">
                 {feature.title}
               </h3>
-              <p className={`font-body leading-relaxed ${
-                feature.highlight ? "text-white/90" : "text-foggy"
-              }`}>
+              <p className="font-body leading-relaxed text-white/90">
                 {feature.description}
               </p>
             </motion.div>

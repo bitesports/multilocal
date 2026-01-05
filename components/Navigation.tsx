@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
+  { id: "network", label: "Network" },
   { id: "about", label: "About" },
   { id: "citizenship", label: "Citizenship" },
   { id: "manifesto", label: "Manifesto" },
