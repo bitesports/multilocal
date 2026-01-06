@@ -105,7 +105,9 @@ export default function Investment() {
           className="text-center mt-12"
         >
           <a
-            href="#contact"
+            href="https://calendly.com/emivelazquez/15min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-rausch hover:bg-rausch-dark text-white font-body font-medium rounded-lg transition-colors duration-200"
           >
             Discuss Investment

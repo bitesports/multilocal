@@ -276,28 +276,6 @@ export default function Network() {
           </motion.div>
         </motion.div>
 
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
-        >
-          {[
-            { value: "100+", label: "Physical Nodes" },
-            { value: "50+", label: "Digital DAOs" },
-            { value: "30+", label: "Countries" },
-            { value: "1", label: "Unified Jurisdiction" },
-          ].map((stat, index) => (
-            <div key={index} className="text-center p-6 bg-white rounded-xl card-shadow">
-              <p className="font-heading text-2xl md:text-3xl font-semibold text-rausch mb-1">
-                {stat.value}
-              </p>
-              <p className="font-body text-sm text-foggy">{stat.label}</p>
-            </div>
-          ))}
-        </motion.div>
-
         {/* Partners */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
