@@ -39,7 +39,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] }}
           className="font-body text-xl md:text-2xl lg:text-3xl font-light text-white/90 mb-10"
         >
-          The First Internet Native Jurisdiction (INJ)
+          Internet Native Jurisdictions
         </motion.p>
 
         <motion.div
