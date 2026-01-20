@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Airbnb-inspired palette */
+  --rausch: #FF5A5F;
+  --rausch-dark: #E04E53;
+  --babu: #00A699;
+  --arches: #FC642D;
+  --hof: #484848;
+  --foggy: #767676;
+  --hackberry: #C4C4C4;
+  --limewash: #EBEBEB;
+  --kazan: #F7F7F7;
+  --white: #FFFFFF;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-rausch: var(--rausch);
+  --color-rausch-dark: var(--rausch-dark);
+  --color-babu: var(--babu);
+  --color-arches: var(--arches);
+  --color-hof: var(--hof);
+  --color-foggy: var(--foggy);
+  --color-hackberry: var(--hackberry);
+  --color-limewash: var(--limewash);
+  --color-kazan: var(--kazan);
+  --color-white: var(--white);
+  
+  --font-heading: var(--font-syne);
+  --font-body: var(--font-outfit);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white);
+  color: var(--hof);
+  font-family: var(--font-outfit), 'Circular', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-syne), 'Circular', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  color: var(--hof);
+  letter-spacing: -0.02em;
+}
+
+/* Minimal scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--kazan);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hackberry);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foggy);
+}
+
+/* Selection */
+::selection {
+  background: var(--rausch);
+  color: var(--white);
+}
+
+/* Airbnb-style card shadow */
+.card-shadow {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-shadow-hover {
+  transition: box-shadow 0.2s ease;
+}
+
+.card-shadow-hover:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
