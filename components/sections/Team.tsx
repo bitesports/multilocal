@@ -170,7 +170,8 @@ export default function Team() {
           ))}
         </div>
 
-        {/* Advisors Section */}
+        {/* Advisors Section - Hidden for now */}
+        {false && (
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
@@ -218,6 +219,7 @@ export default function Team() {
             ))}
           </div>
         </motion.div>
+        )}
       </div>
     </Section>
   );
