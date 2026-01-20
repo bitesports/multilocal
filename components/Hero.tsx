@@ -98,10 +98,12 @@ export default function Hero() {
             Apply as Citizen
           </a>
           <a
-            href="#contact"
+            href="https://mountainous-emmental-9ad.notion.site/Multilocal-2ed0bbe31d2a80c9b03df7968e695581"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-body font-medium rounded-lg transition-colors duration-200 backdrop-blur-sm"
           >
-            Launch a Society
+            Learn more
           </a>
         </motion.div>
 
