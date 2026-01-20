@@ -7,8 +7,8 @@ import Section from "../Section";
 
 const fundUse = [
   { label: "Tech Development", percentage: 50 },
-  { label: "Ecosystem Partnerships", percentage: 25 },
-  { label: "Go-to-Market Acceleration", percentage: 20 },
+  { label: "Ecosystem Partnerships", percentage: 15 },
+  { label: "Go-to-Market Acceleration", percentage: 30 },
   { label: "Operations", percentage: 5 },
 ];
 
