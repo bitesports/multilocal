@@ -37,7 +37,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] }}
-          className="font-body text-xl md:text-2xl lg:text-3xl font-light text-white/90 mb-10"
+          className="font-heading text-xl md:text-2xl lg:text-3xl font-semibold text-white/90 mb-10 tracking-wide"
         >
           Internet Native Jurisdictions
         </motion.p>
